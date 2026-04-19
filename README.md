@@ -47,11 +47,11 @@
 
 ### Pengertian AJAX
 
-AJAX (_Asynchronous JavaScript and XML_) adalah teknik pengembangan web yang memungkinkan aplikasi web untuk mengirim dan menerima data dari _server_ tanpa harus _me-refresh_ (_reload_) seluruh halaman. Meskipun namanya mengandung XML, AJAX sekarang lebih sering menggunakan format JSON (_JavaScript Object Notation_) karena lebih ringan dan mudah _di-parse_ oleh JavaScript. Dengan AJAX, pengalaman pengguna menjadi lebih _smooth_ dan _responsive_ karena hanya bagian tertentu dari halaman yang diperbarui.
+AJAX (Asynchronous JavaScript and XML) adalah teknik dalam pengembangan web yang memungkinkan aplikasi berkomunikasi dengan server tanpa perlu melakukan reload seluruh halaman. Meskipun namanya mengandung XML, saat ini AJAX lebih sering menggunakan JSON (JavaScript Object Notation) karena lebih ringan dan mudah diproses oleh JavaScript. Dengan AJAX, tampilan aplikasi menjadi lebih smooth dan responsif karena hanya sebagian halaman yang diperbarui.
 
 ### Cara Kerja AJAX
 
-Proses AJAX bekerja secara _asynchronous_ (tidak sinkron), artinya JavaScript dapat melanjutkan eksekusi kode lain sambil menunggu respons dari _server_. Alur kerjanya adalah:
+AJAX bekerja secara asynchronous, sehingga JavaScript tetap bisa menjalankan kode lain sambil menunggu respons dari server. Berikut alur kerjanya:
 
 - `Trigger Event`: _User_ melakukan aksi (misal: klik tombol)
   Create
