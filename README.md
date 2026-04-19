@@ -540,26 +540,26 @@ Bagian penting dari kode tersebut meliputi:
 Langkah Menjalankan Program:
 
 - Buka XAMPP, klik _Start_ pada _service_ Apache hingga berwarna hijau.
-- Letakkan file `.php` di dalam folder `C:\xampp\htdocs\Praktikum-ABP` (sesuaikan nama folder).
-- Buka browser, ketik `localhost/Praktikum-ABP/client-modul10.html` pada address bar, lalu Enter.
+- Letakkan file `.php` di dalam folder `C:\xampp\htdocs\modul10-2311102074` (sesuaikan nama folder).
+- Buka browser, ketik `http://localhost/modul10-2311102074/index.html` pada address bar, lalu Enter.
 
 Berikut adalah tampilan output dari Tugas Modul 10.
 
 **Tampilan Awal (Sebelum Klik Tombol):**
 
-![Tampilan Profil](images/output1.png)
+![Tampilan Profil](images/foto1.png)
 
 Halaman menampilkan judul "Tugas Modul 10", deskripsi "Mengambil data dari server dengan AJAX", tombol biru "Tampilkan Profil", dan teks placeholder "Belum ada data. Klik tombol di atas."
 
 **Tampilan Setelah Klik Tombol (Data Berhasil Dimuat):**
 
-![Tampilan Profil](images/output2.png)
+![Tampilan Profil](images/foto2.png)
 
 Setelah tombol diklik, halaman tidak _reload_ sama sekali. Data diambil dari server via AJAX dan ditampilkan dalam bentuk 3 kartu profil dengan animasi _fade-up_ bertahap.
 
 **Tampilan Error (Jika Server Tidak Ditemukan):**
 
-![Tampilan Profil](images/output3.png)
+![Tampilan Profil](images/foto3.png)
 
 Jika file `server-modul10.php` tidak ditemukan atau server error, ditampilkan pesan error berwarna merah dengan penjelasan solusi: "Gagal mengambil data. Pastikan file data.php ada di folder yang sama dan halaman dibuka melalui server lokal."
 
