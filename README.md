@@ -23,7 +23,7 @@
 
   <p>
     <strong>Arvan Murbiyanto</strong><br>
-    <strong>2311102064</strong><br>
+    <strong>2311102074</strong><br>
     <strong>S1 IF-11-04 </strong>
   </p>
 
@@ -94,7 +94,7 @@ Aplikasi terdiri dari 2 file:
 
 ---
 
-### `server-modul10.php`
+### `data.php`
 
 ```php
 <?php
@@ -103,14 +103,15 @@ Aplikasi terdiri dari 2 file:
 header('Content-Type: application/json');
 
 // Data sederhana (simulasi database)
- $data = [
-    ['nama' => 'Budi', 'pekerjaan' => 'Web Developer', 'lokasi' => 'Jakarta'],
-    ['nama' => 'Diva', 'pekerjaan' => 'Data Scientist', 'lokasi' => 'Semarang'],
-    ['nama' => 'Alpukat', 'pekerjaan' => 'Mobile Developer', 'lokasi' => 'Surabaya']
+$data = [
+    ['nama' => 'Arvan', 'pekerjaan' => 'Web Developer', 'lokasi' => 'Tegal'],
+    ['nama' => 'Aji', 'pekerjaan' => 'Data Scientist', 'lokasi' => 'Baseh'],
+    ['nama' => 'Arnanda', 'pekerjaan' => 'Mobile Developer', 'lokasi' => 'Cilacap']
 ];
 
 // Ubah array menjadi JSON dan tampilkan
 echo json_encode($data);
+
 ```
 
 Bagian penting dari kode tersebut meliputi:
@@ -120,10 +121,10 @@ Bagian penting dari kode tersebut meliputi:
 - `json_encode($data)`: Mengubah _array_ PHP menjadi format JSON _string_.
 - `echo`: Mengirim hasil JSON ke _client_.
 
-### `client-modul10.php`
+### `index.html`
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
@@ -135,10 +136,10 @@ Bagian penting dari kode tersebut meliputi:
     />
     <style>
       :root {
-        --blue-deep: #0056b3;
-        --blue-mid: #0074d9;
-        --blue-light: #f1f8ff;
-        --blue-border: #dee2e6;
+        --blue-deep: #091369;
+        --blue-mid: #1079f0;
+        --blue-light: #f1fff7;
+        --blue-border: #10e8f0;
         --blue-stat: #f8f9fa;
         --text-dark: #333;
         --text-muted: #666;
@@ -406,7 +407,7 @@ Bagian penting dari kode tersebut meliputi:
   </head>
 
   <body>
-    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
       <symbol
         id="icon-user"
         viewBox="0 0 24 24"
@@ -448,7 +449,7 @@ Bagian penting dari kode tersebut meliputi:
     <div class="container">
       <div class="header">
         <h1>Tugas Modul 10</h1>
-        <p>Mengambil data dari server dengan AJAX</p>
+        <p>Pengambilan data dari server dengan AJAX</p>
       </div>
 
       <div class="content">
@@ -471,7 +472,7 @@ Bagian penting dari kode tersebut meliputi:
         this.classList.add("loading");
 
         try {
-          const response = await fetch("server-modul10.php");
+          const response = await fetch("data.php");
 
           if (!response.ok) {
             throw new Error("Server error: " + response.status);
@@ -519,6 +520,7 @@ Bagian penting dari kode tersebut meliputi:
     </script>
   </body>
 </html>
+
 ```
 
 Bagian penting dari kode tersebut meliputi:
@@ -538,26 +540,26 @@ Bagian penting dari kode tersebut meliputi:
 Langkah Menjalankan Program:
 
 - Buka XAMPP, klik _Start_ pada _service_ Apache hingga berwarna hijau.
-- Letakkan file `.php` di dalam folder `C:\xampp\htdocs\Praktikum-ABP` (sesuaikan nama folder).
-- Buka browser, ketik `localhost/Praktikum-ABP/client-modul10.html` pada address bar, lalu Enter.
+- Letakkan file `.php` di dalam folder `C:\xampp\htdocs\modul10-2311102074` (sesuaikan nama folder).
+- Buka browser, ketik `http://localhost/modul10-2311102074/index.html` pada address bar, lalu Enter.
 
 Berikut adalah tampilan output dari Tugas Modul 10.
 
 **Tampilan Awal (Sebelum Klik Tombol):**
 
-![Tampilan Profil](images/output1.png)
+![Tampilan Profil](images/foto1.png)
 
 Halaman menampilkan judul "Tugas Modul 10", deskripsi "Mengambil data dari server dengan AJAX", tombol biru "Tampilkan Profil", dan teks placeholder "Belum ada data. Klik tombol di atas."
 
 **Tampilan Setelah Klik Tombol (Data Berhasil Dimuat):**
 
-![Tampilan Profil](images/output2.png)
+![Tampilan Profil](images/foto2.png)
 
 Setelah tombol diklik, halaman tidak _reload_ sama sekali. Data diambil dari server via AJAX dan ditampilkan dalam bentuk 3 kartu profil dengan animasi _fade-up_ bertahap.
 
 **Tampilan Error (Jika Server Tidak Ditemukan):**
 
-![Tampilan Profil](images/output3.png)
+![Tampilan Profil](images/foto3.png)
 
 Jika file `server-modul10.php` tidak ditemukan atau server error, ditampilkan pesan error berwarna merah dengan penjelasan solusi: "Gagal mengambil data. Pastikan file data.php ada di folder yang sama dan halaman dibuka melalui server lokal."
 
