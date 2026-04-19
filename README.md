@@ -22,9 +22,9 @@
   <h3>Disusun Oleh :</h3>
 
   <p>
-    <strong>Andika Neviantoro</strong><br>
-    <strong>2311102167</strong><br>
-    <strong>S1 IF-11-REG01</strong>
+    <strong>Arvan Murbiyantoo</strong><br>
+    <strong>2311102074</strong><br>
+    <strong>S1 IF-11-04</strong>
   </p>
 
   <br />
@@ -32,16 +32,10 @@
   <h3>Dosen Pengampu :</h3>
 
   <p>
-    <strong>Dimas Fanny Hebrasianto Permadi, S.ST., M.Kom</strong>
+    <strong>Cahyo Prihantoro, S.Kom., M.Eng. </strong>
   </p>
   
   <br />
-  <br />
-    <h4>Asisten Praktikum :</h4>
-    <strong>Apri Pandu Wicaksono </strong> <br>
-    <strong>Rangga Pradarrell Fathi</strong>
-  <br />
-
   <h3>LABORATORIUM HIGH PERFORMANCE
  <br>FAKULTAS INFORMATIKA <br>UNIVERSITAS TELKOM PURWOKERTO <br>2026</h3>
 </div>
@@ -116,7 +110,7 @@ ada contoh berikut, akan dilakukan perubahan halaman web menggunakan teknik AJAX
 2. Akses folder htdocs pada local server, dan kemudian buat folder baru dengan nama seperti: ajax
    <p align="center"><img width="934" height="251" alt="image" src="https://github.com/user-attachments/assets/db5feec4-ff23-4fee-bc00-e241eb3dbf1f" /></p>
 3. Buat file .txt berikut yang berfungsi sebagai pengganti konten halaman web.
-   `     <h1>AJAX</h1> 
+   ` <h1>AJAX</h1>
     <p>AJAX is not a programming language.</p> 
     <p>AJAX is a technique for accessing web servers from a web 
     page.</p> 
@@ -368,5 +362,6 @@ Data tersebut diambil dari data.php secara asinkron oleh JavaScript, lalu ditamp
 ## 1.5 Kesimpulan
 
 Program AJAX ini berhasil mendemonstrasikan komunikasi asinkron antara client dan server menggunakan JavaScript fetch() dan PHP. Teknologi AJAX memungkinkan halaman web menjadi lebih responsif karena data dapat diambil dan ditampilkan secara dinamis tanpa perlu memuat ulang seluruh halaman. Konsep ini menjadi dasar penting dalam pengembangan aplikasi web modern
-#   m o d u l - 1 0 - a r v a n - m u r b i y a n t o  
+#   m o d u l - 1 0 - a r v a n - m u r b i y a n t o 
+ 
  
