@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulir Pendaftaran Praktikan</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #1e3c72, #2a5298, #6dd5ed);
+        min-height: 100vh;
+      }
+
+      .container {
+        background-color: #ffffff;
+        width: 500px;
+        margin: 60px auto;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+      }
+
+      h3 {
+        text-align: center;
+        color: #1e3c72;
+        font-size: 22px;
+      }
+
+      table {
+        width: 100%;
+      }
+
+      td {
+        padding: 8px;
+        font-size: 14px;
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 6px;
+        border-radius: 6px;
+        border: 1px solid #999;
+      }
+
+      .btn-submit {
+        background-color: #007bff;
+        color: white;
+        font-weight: bold;
+        border: none;
+        padding: 6px 12px;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      .btn-submit:hover {
+        background-color: #0056b3;
+      }
+
+      button[type="reset"] {
+        background-color: #bbb;
+        border: none;
+        padding: 6px 12px;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h3>Formulir Pendaftaran Praktikan</h3>
+
+      <form action="#" method="POST">
+        <table>
+          <tr>
+            <td width="35%">Nama</td>
+            <td width="5%">:</td>
+            <td>
+              <input
+                type="text"
+                name="nama"
+                value="Aji Tri Prasetyo"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td>NIM</td>
+            <td>:</td>
+            <td>
+              <input type="text" name="nim" value="2311102074" required />
+            </td>
+          </tr>
+
+          <tr>
+            <td>Username</td>
+            <td>:</td>
+            <td>
+              <input type="text" name="username" value="aji.tri" required />
+            </td>
+          </tr>
+
+          <tr>
+            <td>Password</td>
+            <td>:</td>
+            <td>
+              <input
+                type="password"
+                name="password"
+                value="12345678"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td>Email</td>
+            <td>:</td>
+            <td>
+              <input
+                type="email"
+                name="email"
+                placeholder="Input Email"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td>Jenis Kelamin</td>
+            <td>:</td>
+            <td>
+              <input type="radio" name="jk" value="Pria" checked /> Pria
+              <input type="radio" name="jk" value="Wanita" /> Wanita
+            </td>
+          </tr>
+
+          <tr>
+            <td>Hobi</td>
+            <td>:</td>
+            <td>
+              <input type="checkbox" name="hobi1" value="Sepak Bola" /> Sepak
+              Bola
+              <br />
+              <input type="checkbox" name="hobi2" value="Futsal" /> Futsal
+              <br />
+              <input type="checkbox" name="hobi3" value="Ngoding" /> Ngoding
+            </td>
+          </tr>
+
+          <tr>
+            <td>Jenjang Pendidikan</td>
+            <td>:</td>
+            <td>
+              <select name="pendidikan">
+                <option value="">------Pilih------</option>
+                <option value="D3">Tamat D3</option>
+                <option value="S1" selected>Tamat S1</option>
+                <option value="S2">Tamat S2</option>
+                <option value="S3">Tamat S3</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Kritik & Saran</td>
+            <td>:</td>
+            <td>
+              <textarea name="kritik_saran" rows="3"></textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="3" style="text-align: right">
+              <button type="reset">Cancel</button>
+              <button type="submit" class="btn-submit">Submit</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

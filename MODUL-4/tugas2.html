@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Profil - Ajin</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background-image: url("purwokerto.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        font-family: "Segoe UI", sans-serif;
+        min-height: 100vh;
+      }
+
+      .wrapper {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .profile-card {
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 35px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      }
+
+      .profile-img {
+        border: 4px solid #00bcd4;
+      }
+
+      .detail-img {
+        width: 200px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      .btn-custom {
+        background: #00bcd4;
+        border: none;
+        color: white;
+        font-weight: bold;
+        border-radius: 30px;
+        padding: 10px 25px;
+        transition: 0.3s;
+      }
+
+      .btn-custom:hover {
+        background: #0097a7;
+        transform: scale(1.05);
+      }
+
+      .table {
+        background: white;
+      }
+
+      th {
+        color: #0097a7;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container wrapper">
+      <div class="row g-4 justify-content-center" id="layoutRow">
+        <!-- PROFILE -->
+        <div class="col-md-5">
+          <div class="profile-card text-center">
+            <h2 class="fw-bold mb-4">PROFIL MAHASISWA</h2>
+
+            <img
+              src="https://ui-avatars.com/api/?name=Aji+Tri+Prasetyo&background=0D8ABC&color=fff&size=130"
+              class="rounded-circle profile-img shadow mb-3"
+            />
+
+            <h3 class="fw-bold">Aji Tri Prasetyo</h3>
+
+            <p class="text-muted mb-4">
+              Mahasiswa Informatika yang tertarik pada pengembangan website dan
+              teknologi digital.
+            </p>
+
+            <button id="btnToggleProfile" class="btn btn-custom">
+              Lihat Profil Lengkap
+            </button>
+          </div>
+        </div>
+
+        <!-- DETAIL -->
+        <div class="col-md-6 d-none" id="detailSection">
+          <div class="profile-card text-center">
+            <h4 class="fw-bold mb-3 border-bottom border-info pb-2">
+              Informasi Detail
+            </h4>
+
+            <img src="foto-aji2.jpeg" class="detail-img" alt="Foto Aji" />
+
+            <table class="table table-hover">
+              <tr>
+                <th width="40%">Nama</th>
+                <td>Aji Tri Prasetyo</td>
+              </tr>
+
+              <tr>
+                <th>NIM</th>
+                <td>2311102064</td>
+              </tr>
+
+              <tr>
+                <th>Asal</th>
+                <td>
+                  Baseh, Kecamatan Kedungbanteng, Banyumas, Jawa Tengah,
+                  Indonesia
+                </td>
+              </tr>
+
+              <tr>
+                <th>Minat</th>
+                <td>Fullstack Mobile Development</td>
+              </tr>
+
+              <tr>
+                <th>Hobi</th>
+                <td>VIdeografi, Editing</td>
+              </tr>
+
+              <tr>
+                <th>Cita-cita</th>
+                <td>Pengusaha</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const btnToggle = document.getElementById("btnToggleProfile");
+      const detailSection = document.getElementById("detailSection");
+
+      btnToggle.addEventListener("click", function () {
+        if (detailSection.classList.contains("d-none")) {
+          detailSection.classList.remove("d-none");
+          btnToggle.textContent = "Tutup Profil";
+        } else {
+          detailSection.classList.add("d-none");
+          btnToggle.textContent = "Lihat Profil Lengkap";
+        }
+      });
+    </script>
+  </body>
+</html>
