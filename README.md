@@ -22,8 +22,8 @@
   <h3>Disusun Oleh :</h3>
 
   <p>
-    <strong>Arvan Murbiyanto</strong><br>
-    <strong>2311102074</strong><br>
+    <strong>Aji Tri Prasetyo</strong><br>
+    <strong>2311102064</strong><br>
     <strong>S1 IF-11-04 </strong>
   </p>
 
@@ -104,10 +104,14 @@ header('Content-Type: application/json');
 
 // Data sederhana (simulasi database)
 $data = [
-    ['nama' => 'Arvan', 'pekerjaan' => 'Web Developer', 'lokasi' => 'Tegal'],
-    ['nama' => 'Aji', 'pekerjaan' => 'Data Scientist', 'lokasi' => 'Baseh'],
-    ['nama' => 'Arnanda', 'pekerjaan' => 'Mobile Developer', 'lokasi' => 'Cilacap']
+    ['nama' => 'AJI', 'pekerjaan' => 'Menganalisis Lawan', 'lokasi' => 'Purwokerto'],
+    ['nama' => 'MESSI', 'pekerjaan' => 'Passing ke Bambang Pamungkas', 'lokasi' => 'Argentina'],
+    ['nama' => 'BAMBANG PAMUNGKAS', 'pekerjaan' => 'Mencetak Goal', 'lokasi' => 'Jakarta']
 ];
+
+// Ubah array menjadi JSON dan tampilkan
+echo json_encode($data);
+
 
 // Ubah array menjadi JSON dan tampilkan
 echo json_encode($data);
@@ -520,7 +524,6 @@ Bagian penting dari kode tersebut meliputi:
     </script>
   </body>
 </html>
-
 ```
 
 Bagian penting dari kode tersebut meliputi:
